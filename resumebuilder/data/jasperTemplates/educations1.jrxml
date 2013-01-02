@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="educations1" pageWidth="612" pageHeight="792" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="cc0d5684-157c-442f-84c7-f694e83e92f9">
+	<property name="ireport.zoom" value="1.610510000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="xPath">
+		<![CDATA[/person/educations/education]]>
+	</queryString>
+	<field name="school-name" class="java.lang.String">
+		<fieldDescription><![CDATA[school-name]]></fieldDescription>
+	</field>
+	<field name="activities" class="java.lang.String">
+		<fieldDescription><![CDATA[activities]]></fieldDescription>
+	</field>
+	<field name="degree" class="java.lang.String">
+		<fieldDescription><![CDATA[degree]]></fieldDescription>
+	</field>
+	<field name="field-of-study" class="java.lang.String">
+		<fieldDescription><![CDATA[field-of-study]]></fieldDescription>
+	</field>
+	<field name="start-date-year" class="java.lang.String">
+		<fieldDescription><![CDATA[start-date/year]]></fieldDescription>
+	</field>
+	<field name="end-date-year" class="java.lang.String">
+		<fieldDescription><![CDATA[end-date/year]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="44" splitType="Stretch">
+			<textField>
+				<reportElement uuid="d1200d7a-ab2f-4148-bd29-0b95f73561d8" x="0" y="0" width="612" height="20"/>
+				<textElement>
+					<font fontName="Segoe UI Light" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{school-name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="999f2bbd-6024-4639-8be9-132f75857d3f" x="0" y="20" width="612" height="12"/>
+				<textElement>
+					<font fontName="Segoe UI Semilight" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{degree} + ", " + $F{field-of-study}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="999f2bbd-6024-4639-8be9-132f75857d3f" x="0" y="32" width="612" height="12"/>
+				<textElement>
+					<font fontName="Segoe UI Semilight" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{start-date-year} != null ? $F{start-date-year} : "") + "-" +
+($F{end-date-year} != null ? $F{end-date-year} : "")]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
