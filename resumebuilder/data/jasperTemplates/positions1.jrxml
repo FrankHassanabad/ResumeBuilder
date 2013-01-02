@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="positions1" pageWidth="462" pageHeight="792" columnWidth="462" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="cc0d5684-157c-442f-84c7-f694e83e92f9">
+	<property name="ireport.zoom" value="2.5937424601000028"/>
+	<property name="ireport.x" value="291"/>
+	<property name="ireport.y" value="0"/>
+	<property name="net.sf.jasperreports.allow.element.overlap" value="false"/>
+	<queryString language="xPath">
+		<![CDATA[/person/positions/position]]>
+	</queryString>
+	<field name="title" class="java.lang.String">
+		<fieldDescription><![CDATA[title]]></fieldDescription>
+	</field>
+	<field name="summary" class="java.lang.String">
+		<fieldDescription><![CDATA[summary]]></fieldDescription>
+	</field>
+	<field name="start-date-year" class="java.lang.String">
+		<fieldDescription><![CDATA[start-date/year]]></fieldDescription>
+	</field>
+	<field name="end-date-year" class="java.lang.String">
+		<fieldDescription><![CDATA[end-date/year]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[company/name]]></fieldDescription>
+	</field>
+	<field name="start-date-month" class="java.lang.String">
+		<fieldDescription><![CDATA[start-date/month]]></fieldDescription>
+	</field>
+	<field name="end-date-month" class="java.lang.String">
+		<fieldDescription><![CDATA[end-date/month]]></fieldDescription>
+	</field>
+	<field name="is-current" class="java.lang.String">
+		<fieldDescription><![CDATA[is-current]]></fieldDescription>
+	</field>
+	<field name="compnay-id" class="java.lang.String">
+		<fieldDescription><![CDATA[company/id]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="70" splitType="Stretch">
+			<textField>
+				<reportElement uuid="d1200d7a-ab2f-4148-bd29-0b95f73561d8" x="262" y="0" width="200" height="12"/>
+				<box rightPadding="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Segoe UI Semilight" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="daa58af2-3141-4bb4-bab0-920ebd74df1a" x="0" y="35" width="462" height="15"/>
+				<textElement>
+					<font fontName="Segoe UI Semilight" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{summary}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement uuid="6b76a4d9-9ac9-483e-8974-7ae744cd0d5c" x="309" y="12" width="153" height="12"/>
+				<box rightPadding="10"/>
+				<textElement textAlignment="Right">
+					<font fontName="Segoe UI Semilight" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[frankhassanabad.com.github.StartEndDateParser.parse($F{start-date-month}, $F{start-date-year}, $F{end-date-month}, $F{end-date-year}, $F{is-current}, "MMMMM yyyy");]]></textFieldExpression>
+			</textField>
+			<textField hyperlinkType="Reference">
+				<reportElement uuid="27a4b62e-0f2a-49da-9678-ff8d4b346b77" x="0" y="0" width="262" height="24"/>
+				<textElement>
+					<font fontName="Segoe UI Light" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA["http://www.linkedin.com/company/" + $F{compnay-id}]]></hyperlinkReferenceExpression>
+				<hyperlinkTooltipExpression><![CDATA["Click here for company's LinkedIn Page"]]></hyperlinkTooltipExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="d69fdcfd-7ef9-4b04-a83e-1aa6b0cc9963" x="0" y="50" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

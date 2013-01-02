@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+
+    <!-- This extension will tie this directly to a
+         microsoft OS's fonts but be warned, that now
+         you're tied to a microsoft OS directly.  Yes,
+         it would be better if this was packaged ttf's
+         in a jar, but I don't want to violate microsoft
+         ttf licensing, so I created this instead.
+      -->
+
+    <fontFamily name="Arial">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/arial.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/arialbd.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/ariali.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/arialbi.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Book Antiqua">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/BKANT.TTF]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/ANTQUAB.TTF]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/ANTQUABI.TTF]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/ANTQUAI.TTF]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Bookman Old Style">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/BOOKOS.TTF]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/BOOKOSB.TTF]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/BOOKOSBI.TTF]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/BOOKOSBI.TTF]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Calibri">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/calibri.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/calibrib.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/calibrii.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/calibriz.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Calibri Light">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/calibril.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/calibrib.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/calibrili.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/calibriz.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Cambria">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/cambria.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/cambriab.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/cambriai.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/cambriaz.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Candara">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/Candara.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/Candarab.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/Candarai.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/Candaraz.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Century Gothic">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/GOTHIC.TTF]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/GOTHICB.TTF]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/GOTHICI.TTF]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/GOTHICBI.TTF]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Consolas">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/consola.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/consolab.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/consolai.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/consolaz.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Constantia">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/constan.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/constanb.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/constani.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/constanz.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Corbel">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/corbel.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/corbelb.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/corbeli.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/corbelz.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Courier New">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/cour.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/courbd.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/couri.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/courbi.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <!-- We cheat on this one, because it does not have a boldItalic.
+         Instead I just use italic for both italic and boldItalic. -->
+    <fontFamily name="Garamond">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/GARA.TTF]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/GARABD.TTF]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/GARAIT.TTF]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/GARAIT.TTF]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Georgia">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/georgia.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/georgiab.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/georgiai.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/georgiaz.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Palatino">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/pala.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/palab.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/palai.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/palabi.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Segoe UI">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/segoeui.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/segoeuib.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/segoeuii.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/segoeuiz.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <!-- I fudge a bit on this one by mixing different fonts -->
+    <fontFamily name="Segoe UI Light">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/segoeuil.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/seguisb.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/seguili.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/segoeuiz.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <!-- I fudge a bit on this one by mixing different fonts -->
+    <fontFamily name="Segoe UI Semibold">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/seguisb.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/segoeuib.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/seguisbi.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/segoeuiz.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <!-- I fudge a bit on this one by mixing different fonts -->
+    <fontFamily name="Segoe UI Semilight">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/segoeuisl.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/segoeuib.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/seguisli.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/segoeuiz.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <!-- I fudge a bit on this one by using the same font for all since this
+         ttf is used only for the icons within it.
+     -->
+    <fontFamily name="Segoe UI Symbol">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/seguisym.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/seguisym.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/seguisym.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/seguisym.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+
+    <fontFamily name="Times New Roman">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/times.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/timesbd.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/timesi.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/timesbi.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Trebuchet MS">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/trebuc.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/trebucbd.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/trebucit.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/trebucbi.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+    <fontFamily name="Verdana">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/verdana.ttf]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/verdanab.ttf]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/verdanai.ttf]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/verdanaz.ttf]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+
+
+
+    <!-- Empty font family for copying -->
+    <!--
+    <fontFamily name="">
+        <normal><![CDATA[frankhassanabad/com/github/windowsfonts/]]></normal>
+        <bold><![CDATA[frankhassanabad/com/github/windowsfonts/]]></bold>
+        <italic><![CDATA[frankhassanabad/com/github/windowsfonts/]]></italic>
+        <boldItalic><![CDATA[frankhassanabad/com/github/windowsfonts/]]></boldItalic>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+    -->
+
+
+</fontFamilies>

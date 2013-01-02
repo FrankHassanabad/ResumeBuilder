@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="coverletter1" pageWidth="532" pageHeight="792" columnWidth="532" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="0125dd45-0433-44cb-aa6f-93cd69db9481">
+	<property name="ireport.zoom" value="1.9487171000000014"/>
+	<property name="ireport.x" value="21"/>
+	<property name="ireport.y" value="30"/>
+	<parameter name="PERSON_XML_DATA_DOCUMENT" class="org.w3c.dom.Document" isForPrompting="false"/>
+	<parameter name="FIRST_NAME" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="LAST_NAME" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="xPath">
+		<![CDATA[/coverletter]]>
+	</queryString>
+	<field name="body" class="java.lang.String">
+		<fieldDescription><![CDATA[body]]></fieldDescription>
+	</field>
+	<field name="greeting" class="java.lang.String">
+		<fieldDescription><![CDATA[greeting]]></fieldDescription>
+	</field>
+	<field name="company-name" class="java.lang.String">
+		<fieldDescription><![CDATA[company-name]]></fieldDescription>
+	</field>
+	<field name="street-address" class="java.lang.String">
+		<fieldDescription><![CDATA[street-address]]></fieldDescription>
+	</field>
+	<field name="state" class="java.lang.String">
+		<fieldDescription><![CDATA[state]]></fieldDescription>
+	</field>
+	<field name="zipcode" class="java.lang.String">
+		<fieldDescription><![CDATA[zipcode]]></fieldDescription>
+	</field>
+	<field name="city" class="java.lang.String">
+		<fieldDescription><![CDATA[city]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="203" splitType="Stretch">
+			<textField>
+				<reportElement uuid="3536ad71-ea32-4167-879e-d6c6bc7a3893" x="20" y="172" width="100" height="20"/>
+				<textElement>
+					<font fontName="Segoe UI Light" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{greeting}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="0" y="44" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<subreport>
+				<reportElement uuid="67844ad3-77a7-4b9d-80f7-6173b98fcaa9" x="0" y="0" width="532" height="44"/>
+				<subreportParameter name="XML_DATE_PATTERN">
+					<subreportParameterExpression><![CDATA[$P{XML_DATE_PATTERN}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="XML_DATA_DOCUMENT">
+					<subreportParameterExpression><![CDATA[$P{PERSON_XML_DATA_DOCUMENT}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="XML_INPUT_STREAM">
+					<subreportParameterExpression><![CDATA[$P{XML_INPUT_STREAM}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="XML_LOCALE">
+					<subreportParameterExpression><![CDATA[$P{XML_LOCALE}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="XML_NUMBER_PATTERN">
+					<subreportParameterExpression><![CDATA[$P{XML_NUMBER_PATTERN}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="XML_FILE">
+					<subreportParameterExpression><![CDATA[$P{XML_FILE}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="XML_TIME_ZONE">
+					<subreportParameterExpression><![CDATA[$P{XML_TIME_ZONE}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["header1.jasper"]]></subreportExpression>
+			</subreport>
+			<staticText>
+				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="0" y="172" width="20" height="20"/>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="3536ad71-ea32-4167-879e-d6c6bc7a3893" x="20" y="95" width="256" height="15"/>
+				<textElement>
+					<font fontName="Segoe UI Light" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{company-name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="3536ad71-ea32-4167-879e-d6c6bc7a3893" x="20" y="110" width="256" height="15"/>
+				<textElement>
+					<font fontName="Segoe UI Light" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{street-address}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="3536ad71-ea32-4167-879e-d6c6bc7a3893" x="20" y="125" width="256" height="15"/>
+				<textElement>
+					<font fontName="Segoe UI Light" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{city} + ", " + $F{state} + " " + $F{zipcode}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="20" y="156" width="100" height="16"/>
+				<textElement>
+					<font fontName="Segoe UI Semilight"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="20" y="140" width="100" height="16"/>
+				<textElement>
+					<font fontName="Segoe UI Semilight"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="MMMMM dd, yyyy">
+				<reportElement uuid="3536ad71-ea32-4167-879e-d6c6bc7a3893" x="20" y="64" width="256" height="15"/>
+				<textElement>
+					<font fontName="Segoe UI Light" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="20" y="192" width="100" height="11"/>
+				<textElement>
+					<font fontName="Segoe UI Semilight" size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="20" y="79" width="100" height="16"/>
+				<textElement>
+					<font fontName="Segoe UI Semilight"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="44">
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="0b8fe0a3-08dc-4f74-9952-bee3537c7609" x="20" y="0" width="512" height="28"/>
+				<textElement markup="none">
+					<font fontName="Segoe UI Light" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{body}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="0" y="28" width="100" height="16"/>
+				<textElement>
+					<font fontName="Segoe UI Semilight"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<summary>
+		<band height="130">
+			<staticText>
+				<reportElement uuid="12102bbe-36d9-4836-8b09-be46a474b5df" x="20" y="0" width="80" height="16"/>
+				<textElement>
+					<font fontName="Segoe UI Light" size="11"/>
+				</textElement>
+				<text><![CDATA[Sincerely,]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e363ae3d-b824-4ed5-88c5-0575c2fd0a78" x="20" y="48" width="512" height="16"/>
+				<textElement>
+					<font fontName="Segoe UI Light" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{FIRST_NAME} != null ? $P{FIRST_NAME} : "") + " " +
+($P{LAST_NAME} != null ? $P{LAST_NAME} : "")]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="0" y="64" width="100" height="16"/>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="20" y="16" width="100" height="16"/>
+				<textElement>
+					<font fontName="Segoe UI Semilight"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="20" y="32" width="100" height="16"/>
+				<textElement>
+					<font fontName="Segoe UI Semilight"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
