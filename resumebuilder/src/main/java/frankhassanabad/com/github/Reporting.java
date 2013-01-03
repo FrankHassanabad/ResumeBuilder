@@ -12,6 +12,7 @@ import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.engine.util.JRXmlUtils;
 import org.w3c.dom.Document;
 
+import java.awt.*;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Locale;
@@ -46,14 +47,16 @@ public class Reporting {
      * </pre>
      * @param jasperFile The jasper file to fill and create the jrprint file
      * @param useCoverLetter Set to true if you want to output a cover letter, otherwise false.
+     * @param signature Optional image signature to add to the cover letter
      */
     @SuppressWarnings("unchecked")
-    public static void fill(String jasperFile, boolean useCoverLetter) throws JRException {
+    public static void fill(String jasperFile, boolean useCoverLetter, Image signature) throws JRException {
 
         //Get the xml data from the file system
         Map params = new HashMap(7);
         Document personXML = JRXmlUtils.parse(JRLoader.getLocationInputStream("data/linkedInResumes/linkedInProfileData.xml"));
         Document coverLetterXML = JRXmlUtils.parse(JRLoader.getLocationInputStream("data/linkedInResumes/coverletter.xml"));
+        params.put("SIGNATURE", signature);
         params.put("COVERLETTER_XML_DATA_DOCUMENT", coverLetterXML);
         params.put("USE_COVER_LETTER", useCoverLetter);
         params.put(JRXPathQueryExecuterFactory.PARAMETER_XML_DATA_DOCUMENT, personXML);

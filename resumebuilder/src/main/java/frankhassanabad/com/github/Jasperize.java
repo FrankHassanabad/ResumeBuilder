@@ -3,9 +3,12 @@ package frankhassanabad.com.github;
 import net.sf.jasperreports.engine.JRException;
 import org.apache.commons.cli.*;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -17,6 +20,7 @@ import java.util.List;
  * usage: Jasperize [OPTIONS] [InputJrxmlFile] [OutputExportFile]
  * -cl,--coverLetter   Utilizes a cover letter defined in coverletter.xml
  * -h,--help           Shows the help documentation
+ * -sig <arg>          Picture of your signature to add to the cover letter.
  * -v,--version        Shows the help documentation
  * </pre>
  *
@@ -47,6 +51,11 @@ import java.util.List;
  * <pre>
  * Jasperize -cl data/jasperTemplates/resume1.jrxml data/jasperOutput/linkedInResume.pdf
  * </pre>
+ *
+ * Get a PDF output of a template with attached cover letter and signature
+ * <pre>
+ * Jasperize -cl data/jasperTemplates/resume1.jrxml data/jasperOutput/linkedInResume.pdf -sig data/linkedInResumes/john_henry_sig.png
+ * </pre>
  */
 public class Jasperize {
 
@@ -61,12 +70,13 @@ public class Jasperize {
      * @throws JRException  If there's generic overall Jasper issues.
      * @throws ParseException If there's command line parsing issues.
      */
-    public static void main(String[] args) throws FileNotFoundException, JRException, ParseException {
+    public static void main(String[] args) throws IOException, JRException, ParseException {
 
         Options options = new Options();
         options.addOption("h", "help", false, "Shows the help documentation");
         options.addOption("v", "version", false, "Shows the help documentation");
         options.addOption("cl", "coverLetter", false, "Utilizes a cover letter defined in coverletter.xml");
+        options.addOption("sig", true, "Picture of your signature to add to the cover letter.");
         CommandLineParser parser = new GnuParser();
         CommandLine cmd = parser.parse(options, args);
         if (cmd.hasOption("h")) {
@@ -79,6 +89,11 @@ public class Jasperize {
             System.exit(0);
         }
         boolean useCoverLetter = cmd.hasOption("cl");
+        String signatureLocation = cmd.getOptionValue("sig");
+        BufferedImage signatureImage = null;
+        if (signatureLocation != null) {
+            signatureImage = ImageIO.read(new File(signatureLocation));;
+        }
 
         @SuppressWarnings("unchecked")
         List<String> arguments = cmd.getArgList();
@@ -134,7 +149,7 @@ public class Jasperize {
         jrPrintFile = outputFileParentPath + File.separator + inputFileName + ".jrprint";
 
         System.out.println("Filling report: " + compiledMasterFile);
-        Reporting.fill(compiledMasterFile, useCoverLetter);
+        Reporting.fill(compiledMasterFile, useCoverLetter, signatureImage);
         System.out.println("Done filling reports");
         outputType = outputSplit[1];
         System.out.println("Creating output export file of: " + jasperOutput);
