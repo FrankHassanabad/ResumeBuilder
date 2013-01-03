@@ -20,6 +20,7 @@
 	<parameter name="USE_COVER_LETTER" class="java.lang.Boolean" isForPrompting="false">
 		<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
 	</parameter>
+	<parameter name="SIGNATURE" class="java.awt.Image" isForPrompting="false"/>
 	<queryString language="xPath">
 		<![CDATA[/person]]>
 	</queryString>
@@ -123,17 +124,20 @@
 				<subreportParameter name="XML_DATA_DOCUMENT">
 					<subreportParameterExpression><![CDATA[$P{COVERLETTER_XML_DATA_DOCUMENT}]]></subreportParameterExpression>
 				</subreportParameter>
-				<subreportParameter name="FIRST_NAME">
-					<subreportParameterExpression><![CDATA[$F{first-name}]]></subreportParameterExpression>
-				</subreportParameter>
 				<subreportParameter name="XML_INPUT_STREAM">
 					<subreportParameterExpression><![CDATA[$P{XML_INPUT_STREAM}]]></subreportParameterExpression>
 				</subreportParameter>
-				<subreportParameter name="XML_LOCALE">
-					<subreportParameterExpression><![CDATA[$P{XML_LOCALE}]]></subreportParameterExpression>
+				<subreportParameter name="FIRST_NAME">
+					<subreportParameterExpression><![CDATA[$F{first-name}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="SIGNATURE">
+					<subreportParameterExpression><![CDATA[$P{SIGNATURE}]]></subreportParameterExpression>
 				</subreportParameter>
 				<subreportParameter name="PERSON_XML_DATA_DOCUMENT">
 					<subreportParameterExpression><![CDATA[$P{XML_DATA_DOCUMENT}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="XML_LOCALE">
+					<subreportParameterExpression><![CDATA[$P{XML_LOCALE}]]></subreportParameterExpression>
 				</subreportParameter>
 				<subreportParameter name="XML_NUMBER_PATTERN">
 					<subreportParameterExpression><![CDATA[$P{XML_NUMBER_PATTERN}]]></subreportParameterExpression>
