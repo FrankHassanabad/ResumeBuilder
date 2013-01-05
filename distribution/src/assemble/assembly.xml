@@ -31,8 +31,8 @@
             <outputDirectory>data</outputDirectory>
         </fileSet>
         <fileSet>
-            <directory>${project.basedir}/config</directory>
-            <outputDirectory>config</outputDirectory>
+            <directory>${project.basedir}/src/runscripts</directory>
+            <outputDirectory>.</outputDirectory>
         </fileSet>
     </fileSets>
 </assembly>
