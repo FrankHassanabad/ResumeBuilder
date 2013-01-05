@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
@@ -8,12 +9,15 @@
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
     <name>resumebuilder-parent</name>
-    <!-- TODO Change this once we have the real URL -->
-    <url>http://maven.apache.org</url>
+    <url>http://frankhassanabad.github.com/ResumeBuilder</url>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <modules>
         <module>fonts</module>
         <module>resumebuilder</module>
+        <module>distribution</module>
     </modules>
 
 </project>
