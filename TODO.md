@@ -1,4 +1,4 @@
-* Add a license to the top of all the files
+* Change the distribution file name through the assembly.xml (It's too long)
 * JavaDoc packaging with maven
 * Do I want testing at this point or delete all unit testing?
 * change the fact that this directory is hard coed:
