@@ -2,10 +2,10 @@ ResumeBuilder
 =============
 
 Builds a resume from your LinkedIn profile using [LinkedIn's API](https://developer.linkedin.com/apis) and 
-[JasperSoft's Business Intelligence tools](http://www.jaspersoft.com/).  This is accomplished through two tools developed here.  The first 
-tool being LinkedInDownloader and the second being Jasperize.  As the names imply, LinkedInDownloader downloads 
-your profile data and Jasperize builds your resume for you.  This seperate two stage process allows you to fiddle 
-and customize your LinkedIn data before automatically generating your resume.
+[JasperSoft's Business Intelligence tools](http://www.jaspersoft.com/).  This is accomplished through two tools
+developed here.  The first tool being LinkedInDownloader and the second being Jasperize.  As the names imply, 
+LinkedInDownloader downloads your profile data and Jasperize builds your resume for you.  This seperate two stage 
+process allows you to fiddle and customize your LinkedIn data before automatically generating your resume.
 
 Features are
 
@@ -36,13 +36,16 @@ Clone the repository ([Install git if you haven't already](https://help.github.c
 git clone https://github.com/FrankHassanabad/ResumeBuilder.git
 ```
 
-Optionally switch to a tag and build with that
+Either build from master or switch to a tag and build with that.  I recommend using the latest tag and building from 
+that so that if you find an issue you can report against that tagged version.
 
 //TODO this part
 
-Build using maven (Install maven if you haven't already)
+Build using maven ([Install maven if you haven't already](http://maven.apache.org/download.cgi))
 
-//TODO this part
+```
+mvn package
+```
 
 Running
 =============
