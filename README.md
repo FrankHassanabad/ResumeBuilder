@@ -20,7 +20,7 @@ Installing
 Running
 =============
 
-Examples
+Example Resumes in different formats
 =============
 
 [Adobe PDF] (https://github.com/FrankHassanabad/ResumeBuilder/blob/master/resumebuilder/data/jasperOutput/linkedInResume.pdf?raw=true)  
