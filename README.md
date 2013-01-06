@@ -9,9 +9,10 @@ your LinkedIn data before automatically generating your resume.
 
 Features are
 
-* Download LinkedIn profile data
+* Download your LinkedIn profile data
 * Generate your resume using a JasperSoft template
 * Optionally include a cover letter with your resume
+* Supports several formats which are PDF, DOCX, PPTX, ODT, XHTML
 
 Installing
 =============
@@ -19,4 +20,10 @@ Installing
 Running
 =============
 
+Examples
+=============
+
+[Adobe PDF example] (https://github.com/FrankHassanabad/ResumeBuilder/blob/master/resumebuilder/data/jasperOutput/linkedInResume.pdf?raw=true)
+[Microsoft word (docx) example] (https://github.com/FrankHassanabad/ResumeBuilder/blob/master/resumebuilder/data/jasperOutput/linkedInResume.docx?raw=true)
+[Microsoft power point (pptx) example] (https://github.com/FrankHassanabad/ResumeBuilder/blob/master/resumebuilder/data/jasperOutput/linkedInResume.docx?raw=true)
 

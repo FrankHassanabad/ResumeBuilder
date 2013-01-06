@@ -67,26 +67,12 @@
 				<textFieldExpression><![CDATA[$F{summary}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement uuid="fe17666c-8039-4702-9106-88543ecd047f" x="303" y="85" width="269" height="20"/>
-				<textElement>
-					<font fontName="Arial"/>
-				</textElement>
-				<text><![CDATA[]]></text>
-			</staticText>
-			<staticText>
 				<reportElement uuid="68fe3d21-ffd4-4b22-9d0b-29c93644c290" x="0" y="105" width="110" height="43"/>
 				<box topPadding="5"/>
 				<textElement verticalAlignment="Top">
 					<font fontName="Segoe UI Light" size="15"/>
 				</textElement>
 				<text><![CDATA[Objective]]></text>
-			</staticText>
-			<staticText>
-				<reportElement uuid="fe17666c-8039-4702-9106-88543ecd047f" x="303" y="148" width="269" height="20"/>
-				<textElement>
-					<font fontName="Arial"/>
-				</textElement>
-				<text><![CDATA[]]></text>
 			</staticText>
 			<subreport>
 				<reportElement uuid="b00c71d4-d54d-43db-aecf-6fa4bbc7de86" x="0" y="41" width="572" height="44"/>
