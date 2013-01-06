@@ -25,7 +25,7 @@ Examples
 
 Example resumes in different output formats
 
-[Adobe PDF] (https://github.com/FrankHassanabad/ResumeBuilder/blob/master/resumebuilder/data/jasperOutput/linkedInResume.pdf?raw=true)  
+[Adobe Acrobat (pdf)] (https://github.com/FrankHassanabad/ResumeBuilder/blob/master/resumebuilder/data/jasperOutput/linkedInResume.pdf?raw=true)  
 [Microsoft word (docx)] (https://github.com/FrankHassanabad/ResumeBuilder/blob/master/resumebuilder/data/jasperOutput/linkedInResume.docx?raw=true)  
 [Microsoft power point (pptx)] (https://github.com/FrankHassanabad/ResumeBuilder/blob/master/resumebuilder/data/jasperOutput/linkedInResume.pptx?raw=true)  
 
