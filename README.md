@@ -59,7 +59,8 @@ cd distribution/target/ResumeBuilder-1.0.1/ResumeBuilder-1.0.1
 ```
 
 From within the above directory you can run LinkedInDownloader to download your profile XML information into the 
-diretory of data/linkedInResumes like so 
+diretory of data/linkedInResumes.  However first, you have to request a set of
+[LinkedIn API keys] (https://www.linkedin.com/secure/developer) from you account.
 
 ```
 LinkedInDataDownloader.bat
