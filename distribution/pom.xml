@@ -18,9 +18,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <!-- NOTE: These dependency declarations are only required to sort this project to the
-         end of the line in the multimodule build.
-    -->
     <dependencies>
         <dependency>
             <groupId>frankhassanabad.com.github</groupId>
