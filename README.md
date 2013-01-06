@@ -14,12 +14,6 @@ Features are
 * Optionally include a cover letter with your resume
 * Supports several formats which are PDF, DOCX, PPTX, ODT, XHTML
 
-Installing
-=============
-
-Running
-=============
-
 Examples
 =============
 
@@ -28,5 +22,15 @@ Example resumes in different output formats
 [Adobe Acrobat (pdf)] (https://github.com/FrankHassanabad/ResumeBuilder/blob/master/resumebuilder/data/jasperOutput/linkedInResume.pdf?raw=true)  
 [Microsoft word (docx)] (https://github.com/FrankHassanabad/ResumeBuilder/blob/master/resumebuilder/data/jasperOutput/linkedInResume.docx?raw=true)  
 [Microsoft power point (pptx)] (https://github.com/FrankHassanabad/ResumeBuilder/blob/master/resumebuilder/data/jasperOutput/linkedInResume.pptx?raw=true)  
+
+Installing
+=============
+
+You can install the source through master which is typically fairly stable or through a tag.  
+The benfits of pulling from a tag is that you have a version number you can associate with any problems you might 
+encounter.  Also, you know when there's a new version as I will always push new versions out through the tags.
+
+Running
+=============
 
 
