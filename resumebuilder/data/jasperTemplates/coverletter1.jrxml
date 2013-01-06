@@ -37,14 +37,14 @@
 	<title>
 		<band height="203" splitType="Stretch">
 			<textField>
-				<reportElement uuid="3536ad71-ea32-4167-879e-d6c6bc7a3893" x="20" y="172" width="100" height="20"/>
+				<reportElement uuid="3536ad71-ea32-4167-879e-d6c6bc7a3893" x="20" y="172" width="512" height="15"/>
 				<textElement>
 					<font fontName="Segoe UI Light" size="11"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{greeting}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="0" y="44" width="100" height="20"/>
+				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="20" y="44" width="512" height="20"/>
 				<textElement/>
 				<text><![CDATA[]]></text>
 			</staticText>
@@ -74,62 +74,57 @@
 				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 				<subreportExpression><![CDATA["header1.jasper"]]></subreportExpression>
 			</subreport>
-			<staticText>
-				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="0" y="172" width="20" height="20"/>
-				<textElement/>
-				<text><![CDATA[]]></text>
-			</staticText>
 			<textField isStretchWithOverflow="true">
-				<reportElement uuid="3536ad71-ea32-4167-879e-d6c6bc7a3893" x="20" y="95" width="256" height="15"/>
+				<reportElement uuid="3536ad71-ea32-4167-879e-d6c6bc7a3893" x="20" y="95" width="512" height="15"/>
 				<textElement>
 					<font fontName="Segoe UI Light" size="11"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{company-name}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement uuid="3536ad71-ea32-4167-879e-d6c6bc7a3893" x="20" y="110" width="256" height="15"/>
+				<reportElement uuid="3536ad71-ea32-4167-879e-d6c6bc7a3893" x="20" y="110" width="512" height="15"/>
 				<textElement>
 					<font fontName="Segoe UI Light" size="11"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{street-address}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement uuid="3536ad71-ea32-4167-879e-d6c6bc7a3893" x="20" y="125" width="256" height="15"/>
+				<reportElement uuid="3536ad71-ea32-4167-879e-d6c6bc7a3893" x="20" y="125" width="512" height="15"/>
 				<textElement>
 					<font fontName="Segoe UI Light" size="11"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{city} + ", " + $F{state} + " " + $F{zipcode}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="20" y="156" width="100" height="16"/>
+				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="20" y="156" width="512" height="16"/>
 				<textElement>
 					<font fontName="Segoe UI Semilight"/>
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="20" y="140" width="100" height="16"/>
+				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="20" y="140" width="512" height="16"/>
 				<textElement>
 					<font fontName="Segoe UI Semilight"/>
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" pattern="MMMMM dd, yyyy">
-				<reportElement uuid="3536ad71-ea32-4167-879e-d6c6bc7a3893" x="20" y="64" width="256" height="15"/>
+				<reportElement uuid="3536ad71-ea32-4167-879e-d6c6bc7a3893" x="20" y="64" width="512" height="15"/>
 				<textElement>
 					<font fontName="Segoe UI Light" size="11"/>
 				</textElement>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="20" y="192" width="100" height="11"/>
+				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="20" y="187" width="512" height="16"/>
 				<textElement>
 					<font fontName="Segoe UI Semilight" size="10"/>
 				</textElement>
 				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
-				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="20" y="79" width="100" height="16"/>
+				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="20" y="79" width="512" height="16"/>
 				<textElement>
 					<font fontName="Segoe UI Semilight"/>
 				</textElement>
@@ -146,19 +141,12 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{body}]]></textFieldExpression>
 			</textField>
-			<staticText>
-				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="0" y="28" width="100" height="16"/>
-				<textElement>
-					<font fontName="Segoe UI Semilight"/>
-				</textElement>
-				<text><![CDATA[]]></text>
-			</staticText>
 		</band>
 	</detail>
 	<summary>
 		<band height="80">
 			<staticText>
-				<reportElement uuid="12102bbe-36d9-4836-8b09-be46a474b5df" x="20" y="0" width="80" height="16"/>
+				<reportElement uuid="12102bbe-36d9-4836-8b09-be46a474b5df" x="20" y="0" width="512" height="15"/>
 				<textElement>
 					<font fontName="Segoe UI Light" size="11"/>
 				</textElement>
@@ -173,12 +161,12 @@
 ($P{LAST_NAME} != null ? $P{LAST_NAME} : "")]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="0" y="64" width="100" height="16"/>
+				<reportElement uuid="8d645f84-5be3-49c5-a237-f649f36c9f98" x="0" y="64" width="532" height="16"/>
 				<textElement/>
 				<text><![CDATA[]]></text>
 			</staticText>
 			<image vAlign="Middle" onErrorType="Blank">
-				<reportElement uuid="9723c0b7-378e-4d24-a4a4-3e4a2936ee48" x="20" y="16" width="245" height="32"/>
+				<reportElement uuid="9723c0b7-378e-4d24-a4a4-3e4a2936ee48" x="20" y="15" width="512" height="33"/>
 				<imageExpression><![CDATA[$P{SIGNATURE}]]></imageExpression>
 			</image>
 		</band>
