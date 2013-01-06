@@ -50,4 +50,19 @@ mvn package
 Running
 =============
 
+You should already be within your main ResumeBuilder directory.  From there, switch to the distribution directory.  
+Note that the directory versions _are going to be different_ depending on if you're using a tag version or master 
+version.  Below I assume a tag version of 1.0.1.
 
+```
+cd distribution/target/ResumeBuilder-1.0.1/ResumeBuilder-1.0.1
+```
+
+From within the above directory you can run LinkedInDownloader to download your profile XML information into the 
+diretory of data/linkedInResumes like so 
+
+```
+LinkedInDataDownloader.bat
+```
+
+//TODO the rest of this 
