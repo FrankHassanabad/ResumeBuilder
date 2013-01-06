@@ -49,6 +49,8 @@
                             <descriptors>
                                 <descriptor>src/assemble/assembly.xml</descriptor>
                             </descriptors>
+                            <appendAssemblyId>false</appendAssemblyId>
+                            <finalName>ResumeBuilder-${parent.version}</finalName>
                         </configuration>
                     </execution>
                 </executions>

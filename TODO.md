@@ -1,5 +1,7 @@
-* Change the distribution file name through the assembly.xml (It's too long)
+* Make an actual release instead of using snapshot versions
 * JavaDoc packaging with maven
+* Check the docx format with office to see if it works correctly.  Check in that format along with pptx and others
+  for examples
 * Do I want testing at this point or delete all unit testing?
 * change the fact that this directory is hard coed:
       data/LinkedInResumes/linkedInProfileData.xml
