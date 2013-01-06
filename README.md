@@ -30,11 +30,19 @@ You can install the source through master which is typically fairly stable or th
 The benfits of pulling from a tag is that you have a version number you can associate with any problems you might 
 encounter.  Also, you know when there's a new version as I will always push new versions out through the tags.
 
-Clone the repository ([Install git if you haven't alredy](https://help.github.com/articles/set-up-git))
+Clone the repository ([Install git if you haven't already](https://help.github.com/articles/set-up-git))
 
 ```
 git clone https://github.com/FrankHassanabad/ResumeBuilder.git
 ```
+
+Optionally switch to a tag and build with that
+
+//TODO this part
+
+Build using maven (Install maven if you haven't already)
+
+//TODO this part
 
 Running
 =============
