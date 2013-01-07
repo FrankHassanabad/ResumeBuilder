@@ -36,32 +36,146 @@
         <span class="blc"></span><span class="trc"></span>
         </div>
         <article class="markdown-body">
-          <h3>Welcome to GitHub Pages.</h3>
+          <p>The <a href="https://github.com/FrankHassanabad/ResumeBuilder">GitHub page</a> and the 
+<a href="http://frankhassanabad.github.com/ResumeBuilder/">Website page</a>.</p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<h1>ResumeBuilder</h1>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p>Builds a resume from your LinkedIn profile using <a href="https://developer.linkedin.com/apis">LinkedIn's API</a> and 
+<a href="http://www.jaspersoft.com/">JasperSoft's Business Intelligence tools</a>.  This is accomplished through two tools
+developed here.  The first tool being LinkedInDownloader and the second being Jasperize.  As the names imply, 
+LinkedInDownloader downloads your profile data and Jasperize builds your resume for you.  This seperate two stage 
+process allows you to fiddle and customize your LinkedIn data before automatically generating your resume.</p>
+
+<p>Features are</p>
+
+<ul>
+<li>Downloads your LinkedIn profile data</li>
+<li>Generates your resume using a JasperSoft template</li>
+<li>Optionally includes a cover letter with your resume</li>
+<li>Supports several formats which are PDF, DOCX, PPTX, ODT, XHTML</li>
+</ul><h1>Examples</h1>
+
+<p>Example resumes in different output formats</p>
+
+<p><a href="https://github.com/FrankHassanabad/ResumeBuilder/blob/master/resumebuilder/data/jasperOutput/linkedInResume.pdf?raw=true">Adobe Acrobat (pdf)</a><br><a href="https://github.com/FrankHassanabad/ResumeBuilder/blob/master/resumebuilder/data/jasperOutput/linkedInResume.docx?raw=true">Microsoft word (docx)</a><br><a href="https://github.com/FrankHassanabad/ResumeBuilder/blob/master/resumebuilder/data/jasperOutput/linkedInResume.pptx?raw=true">Microsoft power point (pptx)</a>  </p>
+
+<h1>Installing</h1>
+
+<p>You can install the source through master which is typically fairly stable or through a tag.  The benfits of pulling 
+from a tag is that you have a version number you can associate with any problems you might encounter.  Also, you know
+when there's a new version as I will always push new versions out through the tags.</p>
+
+<p>Clone the repository (<a href="https://help.github.com/articles/set-up-git">Install git if you haven't already</a>)</p>
+
+<pre><code>git clone https://github.com/FrankHassanabad/ResumeBuilder.git
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>Either build from master or switch to a tag and build with that.  I recommend using the latest tag and building from 
+that so that if you find an issue you can report against that tagged version.  I will use a version as an example 
+but it might not be the latest version.  For the latest tag see 
+<a href="https://github.com/FrankHassanabad/ResumeBuilder/tags">tags</a>.</p>
 
-<h3>Designer Templates</h3>
+<pre><code>git checkout resumebuilder-parent-1.0.0
+</code></pre>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>Build using maven (<a href="http://maven.apache.org/download.cgi">Install maven if you haven't already</a>)</p>
 
-<h3>Rather Drive Stick?</h3>
+<pre><code>mvn package
+</code></pre>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h1>Running LinkedInDataDownloader</h1>
 
-<h3>Authors and Contributors</h3>
+<p>Open a DOS command line window to your main ResumeBuilder directory.  From there, switch to the distribution directory.<br>
+Note that the directory versions <em>are going to be different</em> depending on if you're using a tag version or master 
+version.  Below I assume a tag version of 1.0.1.</p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<pre><code>cd distribution/target/ResumeBuilder-1.0.1/ResumeBuilder-1.0.1
+</code></pre>
 
-<h3>Support or Contact</h3>
+<p>From within the above distribution directory you can run LinkedInDownloader to download your profile XML 
+information into the diretory of data/linkedInResumes.  However first, you have to request a set of
+<a href="https://www.linkedin.com/secure/developer">LinkedIn API keys</a> from you account.</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<pre><code>LinkedInDataDownloader.bat
+</code></pre>
+
+<p>When prompted enter your API key</p>
+
+<pre><code>Enter your LinkedIn API Key:
+&gt;&gt; (Enter your api key here)
+</code></pre>
+
+<p>When the next prompt occurs, enter your API secert key</p>
+
+<pre><code>Enter your LinkedIn API Secret Key:
+&gt;&gt; (Enter your secret api key)
+</code></pre>
+
+<p>When the final prompt comes up to get the verification token, visit the website, enter your LinkedIn credentials 
+and then put in the verification key</p>
+
+<pre><code>You need to authorize LinkedInDataDownloader by copying the LinkedIn URL into a browser:
+https://api.linkedin.com/uas/oauth/authorize?oauth_token=xxxxxx-xxxx-xxxx-xxxx-xxxxxx
+And paste the verifier here
+&gt;&gt; (Enter your verification code)
+</code></pre>
+
+<p>And then you should see the program output of download your LinkedInProfile like so </p>
+
+<pre><code>Writing the output of your profile into data/linkedInResumes/linkedInProfileData.xml
+Wrote the output of your profile into data/linkedInResumes/linkedInProfileData.xml
+</code></pre>
+
+<h1>Running Jasperize</h1>
+
+<p>Open a DOS command line window to your main ResumeBuilder directory.  From there, switch to the distribution directory.<br>
+Note that the directory versions <em>are going to be different</em> depending on if you're using a tag version or master 
+version.  Below I assume a tag version of 1.0.1.</p>
+
+<pre><code>cd distribution/target/ResumeBuilder-1.0.1/ResumeBuilder-1.0.1
+</code></pre>
+
+<p>From within the above distribution directory you can run Jasperize to convert your LinkedIn profile xml into a 
+resume like so</p>
+
+<pre><code>Jasperize.bat
+</code></pre>
+
+<p>You should see the output of</p>
+
+<pre><code>Using the default arguments of:
+    [InputjrxmlFile] data/jasperTemplates/resume1.jrxml
+    [OutputExportFile] data/jasperOutput/linkedInResume.pdf
+Compiling report(s)
+Compiling: data\jasperTemplates\coverletter1.jrxml
+Compiling: data\jasperTemplates\educations1.jrxml
+Compiling: data\jasperTemplates\header1.jrxml
+Compiling: data\jasperTemplates\positions1.jrxml
+Compiling: data\jasperTemplates\resume1.jrxml
+Compiling: data\jasperTemplates\skills1.jrxml
+Done compiling report(s)
+Filling report: data\jasperOutput\resume1.jasper
+Done filling reports
+Creating output export file of: data/jasperOutput/linkedInResume.pdf
+Done creating output export file of: data/jasperOutput/linkedInResume.pdf
+</code></pre>
+
+<p>And you're done!</p>
+
+<p>If you want to add a cover letter with a scanned image of your signature you would use the following command </p>
+
+<pre><code>Jasperize.bat -cl -sig data/linkedInResumes/john_henry_sig.png
+</code></pre>
+
+<p>If you want to use a different output format such as Microsoft's word format (docx), you would use one of the 
+following commands</p>
+
+<pre><code>Jasperize.bat data/jasperTemplates/resume1.jrxml data/jasperOutput/linkedInResume.docx
+</code></pre>
+
+<pre><code>Jasperize.bat data/jasperTemplates/resume1.jrxml data/jasperOutput/linkedInResume.pptx
+</code></pre>
         </article>
       </div>
     </div>
