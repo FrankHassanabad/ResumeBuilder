@@ -15,5 +15,4 @@ To make a release:
 
 - Check everything in
 - Run mvn release:prepare
-- Run mvn release:perform
 
