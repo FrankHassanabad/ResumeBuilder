@@ -51,10 +51,10 @@ Build using maven ([Install maven if you haven't already](http://maven.apache.or
 mvn package
 ```
 
-Running
+Running LinkedInDataDownloader
 =============
 
-You should already be within your main ResumeBuilder directory.  From there, switch to the distribution directory.  
+Open a DOS command line window to your main ResumeBuilder directory.  From there, switch to the distribution directory.  
 Note that the directory versions _are going to be different_ depending on if you're using a tag version or master 
 version.  Below I assume a tag version of 1.0.1.
 
@@ -67,15 +67,41 @@ information into the diretory of data/linkedInResumes.  However first, you have 
 [LinkedIn API keys] (https://www.linkedin.com/secure/developer) from you account.
 
 ```
-sh LinkedInDataDownloader.sh
-```
-If you're on Windows and using a regular console instead of a gitshell you can use the following batch file:
-
-```
 LinkedInDataDownloader.bat
 ```
 
-//TODO the rest of this 
+When prompted enter your API key
+
+```
+Enter your LinkedIn API Key:
+>> (Enter your api key here)
+```
+
+When the next prompt occurs, enter your API secert key
+
+```
+Enter your LinkedIn API Secret Key:
+>> (Enter your secret api key)
+```
+
+When the final prompt comes up to get the verification token, visit the website, enter your LinkedIn credentials 
+and then put in the verification key
+
+```
+You need to authorize LinkedInDataDownloader by copying the LinkedIn URL into a browser:
+https://api.linkedin.com/uas/oauth/authorize?oauth_token=xxxxxx-xxxx-xxxx-xxxx-xxxxxx
+And paste the verifier here
+>> (Enter your verification code)
+```
+
+And then you should see the program output of download your LinkedInProfile like so 
+```
+Writing the output of your profile into data/linkedInResumes/linkedInProfileData.xml
+Wrote the output of your profile into data/linkedInResumes/linkedInProfileData.xml
+```
+
+Running Jasperize
+=============
 
 
 
