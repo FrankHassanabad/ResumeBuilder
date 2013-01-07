@@ -57,7 +57,7 @@ mvn package
 Running LinkedInDataDownloader
 =============
 
-Open a DOS command line window to your main ResumeBuilder directory.  From there, switch to the distribution directory.  
+Open a DOS command line window to your main ResumeBuilder directory.  From there, switch to the distribution directory.
 Note that the directory versions _are going to be different_ depending on if you're using a tag version or master 
 version.  Below I assume a tag version of 1.0.1.
 
