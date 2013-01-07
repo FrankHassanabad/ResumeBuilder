@@ -1,6 +1,9 @@
 ResumeBuilder
 =============
 
+[GitHub](https://github.com/FrankHassanabad/ResumeBuilder) page 
+[WebSite page](http://frankhassanabad.github.com/ResumeBuilder/)
+
 Builds a resume from your LinkedIn profile using [LinkedIn's API](https://developer.linkedin.com/apis) and 
 [JasperSoft's Business Intelligence tools](http://www.jaspersoft.com/).  This is accomplished through two tools
 developed here.  The first tool being LinkedInDownloader and the second being Jasperize.  As the names imply, 
