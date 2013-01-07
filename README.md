@@ -1,7 +1,7 @@
 ResumeBuilder
 =============
 
-[GitHub page](https://github.com/FrankHassanabad/ResumeBuilder)
+The [GitHub page](https://github.com/FrankHassanabad/ResumeBuilder) and the 
 [WebSite page](http://frankhassanabad.github.com/ResumeBuilder/)
 
 Builds a resume from your LinkedIn profile using [LinkedIn's API](https://developer.linkedin.com/apis) and 
