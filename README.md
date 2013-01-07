@@ -147,9 +147,14 @@ If you want to add a cover letter with a scanned image of your signature you wou
 Jasperize.bat -cl -sig data/linkedInResumes/john_henry_sig.png
 ```
 
-If you want to use a different output format such as Microsoft's word format (docx), you would use the following 
-command 
+If you want to use a different output format such as Microsoft's word format (docx), you would use one of the 
+following commands
 
 ```
-Jaserpize.bat data/jasperTemplates/resume1.jrxml data/jasperOutput/linkedInResume.docx
+Jasperize.bat data/jasperTemplates/resume1.jrxml data/jasperOutput/linkedInResume.docx
 ```
+
+```
+Jasperize.bat data/jasperTemplates/resume1.jrxml data/jasperOutput/linkedInResume.pptx
+```
+
