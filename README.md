@@ -1,5 +1,5 @@
 The [GitHub page](https://github.com/FrankHassanabad/ResumeBuilder) and the 
-[WebSite page](http://frankhassanabad.github.com/ResumeBuilder/).
+[Website page](http://frankhassanabad.github.com/ResumeBuilder/).
 
 ResumeBuilder
 =============
