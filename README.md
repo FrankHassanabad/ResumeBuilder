@@ -1,8 +1,8 @@
+The [GitHub page](https://github.com/FrankHassanabad/ResumeBuilder) and the 
+[WebSite page](http://frankhassanabad.github.com/ResumeBuilder/).
+
 ResumeBuilder
 =============
-
-The [GitHub page](https://github.com/FrankHassanabad/ResumeBuilder) and the 
-[WebSite page](http://frankhassanabad.github.com/ResumeBuilder/)
 
 Builds a resume from your LinkedIn profile using [LinkedIn's API](https://developer.linkedin.com/apis) and 
 [JasperSoft's Business Intelligence tools](http://www.jaspersoft.com/).  This is accomplished through two tools
