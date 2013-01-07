@@ -1,6 +1,4 @@
 * Update the README.md and release it with a page.
-* Check the docx format with office to see if it works correctly.
-  Generate and check-in PDF, DOCX, PPTX, and others into github.
 * JavaDoc packaging with maven
 * Add ".sh" run time files.
 * change the fact that this directory is hard coed:
