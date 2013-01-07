@@ -4,13 +4,13 @@
     <groupId>frankhassanabad.com.github</groupId>
     <artifactId>fonts</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <name>fonts</name>
     <url>http://frankhassanabad.github.com/ResumeBuilder</url>
     <parent>
         <groupId>frankhassanabad.com.github</groupId>
         <artifactId>resumebuilder-parent</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2-SNAPSHOT</version>
     </parent>
 
     <properties>

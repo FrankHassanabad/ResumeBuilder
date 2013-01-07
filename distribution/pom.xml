@@ -5,7 +5,7 @@
     <parent>
         <groupId>frankhassanabad.com.github</groupId>
         <artifactId>resumebuilder-parent</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2-SNAPSHOT</version>
     </parent>
 
     <artifactId>distribution</artifactId>
@@ -20,12 +20,12 @@
         <dependency>
             <groupId>frankhassanabad.com.github</groupId>
             <artifactId>fonts</artifactId>
-            <version>1.0.1</version>
+            <version>1.0.2-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>frankhassanabad.com.github</groupId>
             <artifactId>resumebuilder</artifactId>
-            <version>1.0.1</version>
+            <version>1.0.2-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

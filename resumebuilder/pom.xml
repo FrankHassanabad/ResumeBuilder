@@ -4,13 +4,13 @@
     <groupId>frankhassanabad.com.github</groupId>
     <artifactId>resumebuilder</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <name>resumebuilder</name>
     <url>http://frankhassanabad.github.com/ResumeBuilder</url>
     <parent>
         <groupId>frankhassanabad.com.github</groupId>
         <artifactId>resumebuilder-parent</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2-SNAPSHOT</version>
     </parent>
     <dependencies>
         <dependency>
@@ -41,7 +41,7 @@
         <dependency>
             <groupId>frankhassanabad.com.github</groupId>
             <artifactId>fonts</artifactId>
-            <version>1.0.1</version>
+            <version>1.0.2-SNAPSHOT</version>
         </dependency>
         <!-- Command line interface for parsing our command line switches -->
         <dependency>

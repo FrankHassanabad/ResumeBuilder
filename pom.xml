@@ -4,7 +4,7 @@
     <groupId>frankhassanabad.com.github</groupId>
     <artifactId>resumebuilder-parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <name>resumebuilder-parent</name>
     <url>http://frankhassanabad.github.com/ResumeBuilder</url>
     <properties>
@@ -14,7 +14,7 @@
         <connection>scm:git:git@github.com:FrankHassanabad/ResumeBuilder.git</connection>
         <url>scm:git:git@github.com:FrankHassanabad/ResumeBuilder.git</url>
         <developerConnection>scm:git:git@github.com:FrankHassanabad/ResumeBuilder.git</developerConnection>
-      <tag>resumebuilder-parent-1.0.1</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <modules>
