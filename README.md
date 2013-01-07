@@ -103,5 +103,53 @@ Wrote the output of your profile into data/linkedInResumes/linkedInProfileData.x
 Running Jasperize
 =============
 
+Open a DOS command line window to your main ResumeBuilder directory.  From there, switch to the distribution directory.  
+Note that the directory versions _are going to be different_ depending on if you're using a tag version or master 
+version.  Below I assume a tag version of 1.0.1.
+
+```
+cd distribution/target/ResumeBuilder-1.0.1/ResumeBuilder-1.0.1
+```
+
+From within the above distribution directory you can run Jasperize to convert your LinkedIn profile xml into a 
+resume like so
+
+```
+Jasperize.bat
+```
+
+You should see the output of
+
+```
+Using the default arguments of:
+    [InputjrxmlFile] data/jasperTemplates/resume1.jrxml
+    [OutputExportFile] data/jasperOutput/linkedInResume.pdf
+Compiling report(s)
+Compiling: data\jasperTemplates\coverletter1.jrxml
+Compiling: data\jasperTemplates\educations1.jrxml
+Compiling: data\jasperTemplates\header1.jrxml
+Compiling: data\jasperTemplates\positions1.jrxml
+Compiling: data\jasperTemplates\resume1.jrxml
+Compiling: data\jasperTemplates\skills1.jrxml
+Done compiling report(s)
+Filling report: data\jasperOutput\resume1.jasper
+Done filling reports
+Creating output export file of: data/jasperOutput/linkedInResume.pdf
+Done creating output export file of: data/jasperOutput/linkedInResume.pdf
+```
+
+And you're done!
+
+If you want to add a cover letter with a scanned image of your signature you would use the following command 
 
 
+```
+Jasperize.bat -cl -sig data/linkedInResumes/john_henry_sig.png
+```
+
+If you want to use a different output format such as Microsoft's word format (docx), you would use the following 
+command 
+
+```
+Jaserpize.bat data/jasperTemplates/resume1.jrxml data/jasperOutput/linkedInResume.docx
+```
