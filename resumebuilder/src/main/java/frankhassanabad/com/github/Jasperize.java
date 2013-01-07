@@ -117,7 +117,13 @@ public class Jasperize {
 
         final String jrxmlFile;
         final String jasperOutput;
-        if (arguments.size() == 3) {
+        if (arguments.size() == 2) {
+            jrxmlFile = arguments.get(0);
+            jasperOutput = arguments.get(1);
+            System.out.println("*Detected* the command line arguments of:");
+            System.out.println("    [InputjrxmlFile] " + jrxmlFile);
+            System.out.println("    [OutputExportFile] " + jasperOutput);
+        } else if (arguments.size() == 3) {
             jrxmlFile = arguments.get(1);
             jasperOutput = arguments.get(2);
             System.out.println("*Detected* the command line arguments of:");
