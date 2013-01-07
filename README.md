@@ -37,9 +37,13 @@ git clone https://github.com/FrankHassanabad/ResumeBuilder.git
 ```
 
 Either build from master or switch to a tag and build with that.  I recommend using the latest tag and building from 
-that so that if you find an issue you can report against that tagged version.
+that so that if you find an issue you can report against that tagged version.  I will use a version as an example 
+but it might not be the latest version.  For the latest tag see 
+[tags](https://github.com/FrankHassanabad/ResumeBuilder/tags).
 
-//TODO this part
+```
+git checkout resumebuilder-parent-1.0.0
+```
 
 Build using maven ([Install maven if you haven't already](http://maven.apache.org/download.cgi))
 
@@ -61,6 +65,11 @@ cd distribution/target/ResumeBuilder-1.0.1/ResumeBuilder-1.0.1
 From within the above distribution directory you can run LinkedInDownloader to download your profile XML 
 information into the diretory of data/linkedInResumes.  However first, you have to request a set of
 [LinkedIn API keys] (https://www.linkedin.com/secure/developer) from you account.
+
+```
+sh LinkedInDataDownloader.sh
+```
+If you're on Windows and using a regular console instead of a gitshell you can use the following batch file:
 
 ```
 LinkedInDataDownloader.bat
