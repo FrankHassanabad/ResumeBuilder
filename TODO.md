@@ -1,4 +1,5 @@
-* Update the README.md and release it with a page.
+* Update the package structure to have another depth instead of just
+  frankhassanabad.com.github, it should be resumebuilder.frankhassanabad.com.github
 * JavaDoc packaging with maven
 * Add ".sh" run time files.
 * change the fact that this directory is hard coed:
